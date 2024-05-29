@@ -568,4 +568,16 @@
   --iconbutton-py-base: var(--size-8);
   --iconbutton-py-large: var(--size-10);
   --iconbutton-py-xlarge: var(--size-12);
+
+  /*--------------------- Switch ----------------------*/
+  --switch-light-default-text: #fff;
+  --switch-dark-default-text: #000;
+  --switch-light-surface-default: #4a90e2;
+  --switch-dark-surface-default: #6b7280;
+  --switch-light-border-default: #666;
+  --switch-dark-border-default: #ccc;
+  --switch-light-error-text: #ff0000;
+  --switch-dark-error-text: #ff5050;
+  --switch-border-light: #ccc;
+  --switch-border-dark: #666;
 }

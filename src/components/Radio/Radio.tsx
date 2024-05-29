@@ -4,6 +4,7 @@ import styles from "./Radio.module.css";
 export interface RadioProps {
   label: string;
   contrast: "light" | "dark";
+  name: string;
   initialChecked?: boolean;
   initialError?: boolean;
 }
@@ -12,6 +13,7 @@ const Radio = (props: RadioProps) => {
   const {
     label,
     contrast,
+    name,
     initialChecked = false,
     initialError = false,
   } = props;
@@ -30,6 +32,7 @@ const Radio = (props: RadioProps) => {
     >
       <input
         type="radio"
+        name={name}
         checked={checked}
         onChange={handleChange}
         className={styles.radioInput}
