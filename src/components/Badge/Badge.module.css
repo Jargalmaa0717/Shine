@@ -1,0 +1,97 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+.badge-light-primary {
+  background-color: var(--badge-light-surface-primary);
+  border: 1.5px solid var(--badge-light-border-primary);
+  color: var(--badge-light-text-primary);
+}
+.badge-light-secondary {
+  background-color: var(--badge-light-surface-secondary);
+  border: 1.5px solid var(--badge-light-border-secondary);
+  color: var(--badge-light-text-secondary);
+}
+.badge-light-warning {
+  background-color: var(--badge-light-surface-warning);
+  border: 1.5px solid var(--badge-light-border-warning);
+  color: var(--badge-light-text-warning);
+}
+.badge-light-destructive {
+  background-color: var(--badge-light-surface-destructive);
+  border: 1.5px solid var(--badge-light-border-destructive);
+  color: var(--badge-light-text-destructive);
+}
+.badge-light-success {
+  background-color: var(--badge-light-surface-success);
+  border: 1.5px solid var(--badge-light-border-success);
+  color: var(--badge-light-text-success);
+}
+.badge-light-orchid {
+  background-color: var(--badge-light-surface-orchid);
+  border: 1.5px solid var(--badge-light-border-orchid);
+  color: var(--badge-light-text-orchid);
+}
+
+.badge-dark-primary {
+  background-color: var(--badge-dark-surface-primary);
+  border: 1.5px solid var(--badge-dark-border-primary);
+  color: var(--badge-dark-text-primary);
+}
+.badge-dark-secondary {
+  background-color: var(--badge-dark-surface-secondary);
+  border: 1.5px solid var(--badge-dark-border-secondary);
+  color: var(--badge-dark-text-secondary);
+}
+.badge-dark-warning {
+  background-color: var(--badge-dark-surface-warning);
+  border: 1.5px solid var(--badge-dark-border-warning);
+  color: var(--badge-dark-text-warning);
+}
+.badge-dark-destructive {
+  background-color: var(--badge-dark-surface-destructive);
+  border: 1.5px solid var(--badge-dark-border-destructive);
+  color: var(--badge-dark-text-destructive);
+}
+.badge-dark-success {
+  background-color: var(--badge-dark-surface-success);
+  border: 1.5px solid var(--badge-dark-border-success);
+  color: var(--badge-dark-text-success);
+}
+.badge-dark-orchid {
+  background-color: var(--badge-dark-surface-orchid);
+  border: 1.5px solid var(--badge-dark-border-orchid);
+  color: var(--badge-dark-text-orchid);
+}
+
+.badge-small {
+  padding-top: var(--badge-py-small);
+  padding-bottom: var(--badge-py-small);
+  padding-left: var(--badge-px-small);
+  padding-right: var(--badge-px-small);
+}
+.badge-medium {
+  padding-top: var(--badge-py-medium);
+  padding-bottom: var(--badge-py-medium);
+  padding-left: var(--badge-px-medium);
+  padding-right: var(--badge-px-medium);
+}
+.badge-large {
+  padding-top: var(--badge-py-large);
+  padding-bottom: var(--badge-py-large);
+  padding-left: var(--badge-px-large);
+  padding-right: var(--badge-px-large);
+}
+.badge-xl {
+  padding-top: var(--badge-py-xl);
+  padding-bottom: var(--badge-py-xl);
+  padding-left: var(--badge-px-xl);
+  padding-right: var(--badge-px-xl);
+}
+
+.badge-default {
+  border-radius: var(--badge-radius-default);
+  display: inline-block;
+}
+.badge-curved {
+  border-radius: var(--badge-radius-curved);
+  display: inline-block;
+}

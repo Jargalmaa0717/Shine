@@ -1,0 +1,81 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+div {
+  display: inline-block;
+}
+.tabs-light,
+.tabs-light-default,
+.tabs-light-hover,
+.tabs-light-selected,
+.tabs-light-focus,
+.tabs-dark,
+.tabs-dark-default,
+.tabs-dark-hover,
+.tabs-dark-selected .tabs-dark-focus {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tabs-light {
+  background-color: var(--tabs-light-surface);
+  border: 1.5px solid var(--tabs-light-border);
+  color: var(--tabs-light-text);
+}
+.tabs-dark {
+  background-color: var(--tabs-dark-surface);
+  border: 1.5px solid var(--tabs-dark-border);
+  color: var(--tabs-dark-text);
+}
+
+.tabs-light-default {
+  background-color: var(--tabs-light-surface-default);
+  border: 3px solid var(--tabs-light-border-default);
+  color: var(--tabs-light-text-default);
+}
+.tabs-light-hover {
+  background-color: var(--tabs-light-surface-hover);
+  border: 3px solid var(--tabs-light-border-hover);
+  color: var(--tabs-light-text-hover);
+}
+.tabs-light-selected {
+  background-color: var(--tabs-light-surface-selected);
+  border: 3px solid var(--tabs-light-border-selected);
+  color: var(--tabs-light-text-selected);
+}
+.tabs-light-focus {
+  background-color: var(--tabs-light-surface-focus);
+  border: 3px solid var(--tabs-light-border-focus);
+  color: var(--tabs-light-text-focus);
+}
+
+.tabs-dark-default {
+  background-color: var(--tabs-dark-surface-default);
+  border: 3px solid var(--tabs-dark-border-default);
+  color: var(--tabs-dark-text-default);
+}
+.tabs-dark-hover {
+  background-color: var(--tabs-dark-surface-hover);
+  border: 3px solid var(--tabs-dark-border-hover);
+  color: var(--tabs-dark-text-hover);
+}
+.tabs-dark-selected {
+  background-color: var(--tabs-dark-surface-selected);
+  border: 3px solid var(--tabs-dark-border-selected);
+  color: var(--tabs-dark-text-selected);
+}
+
+.tabs-dark-focus {
+  background-color: var(--tabs-dark-surface-focus);
+  border: 3px solid var(--tabs-dark-border-focus);
+  color: var(--tabs-dark-text-focus);
+}
+
+.tabs-dark-curved {
+  background-color: var(--tabs-dark-surface-focus);
+  border: 80px solid var(--tabs-dark-border-focus);
+  color: var(--tabs-dark-text-focus);
+  border-radius: var(--tabs-dark-radius-focus);
+}
