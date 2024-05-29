@@ -1,0 +1,136 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+.txtfield {
+  display: inline-block;
+  /* border-radius: var(--txtfield-border-radius); */
+  font-size: var(--fontsize-lg);
+}
+
+.txtfield-base {
+  width: 300px;
+  border-radius: var(--txtfield-border-radius);
+  height: var(--txtfield-size-base);
+  padding: var(--txtfield-px) var(--txtfield-py-base);
+  font-size: var(--fontsize-lg);
+}
+
+.txtfield-small {
+  width: 300px;
+  border-radius: var(--txtfield-border-radius);
+  height: var(--txtfield-size-small);
+  padding: var(--txtfield-px) var(--txtfield-py-small);
+  font-size: var(--fontsize-md);
+}
+
+/* Light Mode */
+.txtfield-light {
+  background-color: var(--txtfield-light-surface-default);
+  border: 1px solid var(--txtfield-light-border-default);
+  color: var(--txtfield-light-default-text);
+}
+
+.txtfield-light:hover {
+  background-color: var(--txtfield-light-surface-hover);
+  border: 1px solid var(--txtfield-light-border-hover);
+  color: var(--txtfield-light-hover-text);
+}
+
+.txtfield-light:focus {
+  background-color: var(--txtfield-light-surface-focus);
+  border: 1px solid var(--txtfield-light-border-focus);
+  color: var(--txtfield-light-focus-text);
+}
+
+.txtfield-light.filled {
+  background-color: var(--txtfield-light-surface-filled);
+  border: 1px solid var(--txtfield-light-border-filled);
+  color: var(--txtfield-light-filled-text);
+}
+
+.txtfield-light.disabled {
+  background-color: var(--txtfield-light-surface-disabled);
+  border: 1px solid var(--txtfield-light-border-disabled);
+  color: var(--txtfield-light-disabled-text);
+}
+
+.txtfield-light.error {
+  background-color: var(--txtfield-light-surface-error);
+  border: 1px solid var(--txtfield-light-border-error);
+  color: var(--txtfield-light-error-text);
+}
+
+/* Dark Mode */
+.txtfield-dark {
+  background-color: var(--txtfield-dark-surface-default);
+  border: 1px solid var(--txtfield-dark-border-default);
+  color: var(--txtfield-dark-default-text);
+}
+
+.txtfield-dark:hover {
+  background-color: var(--txtfield-dark-surface-hover);
+  border: 1px solid var(--txtfield-dark-border-hover);
+  color: var(--txtfield-dark-hover-text);
+}
+
+.txtfield-dark:focus {
+  background-color: var(--txtfield-dark-surface-focus);
+  border: 1px solid var(--txtfield-dark-border-focus);
+  color: var(--txtfield-dark-focus-text);
+}
+
+.txtfield-dark.filled {
+  background-color: var(--txtfield-dark-surface-filled);
+  border: 1px solid var(--txtfield-dark-border-filled);
+  color: var(--txtfield-dark-filled-text);
+}
+
+.txtfield-dark.disabled {
+  background-color: var(--txtfield-dark-surface-disabled);
+  border: 1px solid var(--txtfield-dark-border-disabled);
+  color: var(--txtfield-dark-disabled-text);
+}
+
+.txtfield-dark.error {
+  background-color: var(--txtfield-dark-surface-error);
+  border: 1px solid var(--txtfield-dark-border-error);
+  color: var(--txtfield-dark-error-text);
+}
+
+/* Media query for automatic dark mode detection */
+@media (prefers-color-scheme: dark) {
+  .txtfield-light {
+    background-color: var(--txtfield-dark-surface-default);
+    border: 1px solid var(--txtfield-dark-border-default);
+    color: var(--txtfield-dark-default-text);
+  }
+
+  .txtfield-light:hover {
+    background-color: var(--txtfield-dark-surface-hover);
+    border: 1px solid var(--txtfield-dark-border-hover);
+    color: var(--txtfield-dark-hover-text);
+  }
+
+  .txtfield-light:focus {
+    background-color: var(--txtfield-dark-surface-focus);
+    border: 1px solid var(--txtfield-dark-border-focus);
+    color: var(--txtfield-dark-focus-text);
+  }
+
+  .txtfield-light.filled {
+    background-color: var(--txtfield-dark-surface-filled);
+    border: 1px solid var(--txtfield-dark-border-filled);
+    color: var(--txtfield-dark-filled-text);
+  }
+
+  .txtfield-light.disabled {
+    background-color: var(--txtfield-dark-surface-disabled);
+    border: 1px solid var(--txtfield-dark-border-disabled);
+    color: var(--txtfield-dark-disabled-text);
+  }
+
+  .txtfield-light.error {
+    background-color: var(--txtfield-dark-surface-error);
+    border: 1px solid var(--txtfield-dark-border-error);
+    color: var(--txtfield-dark-error-text);
+  }
+}

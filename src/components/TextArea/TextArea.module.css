@@ -1,0 +1,136 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+.txtarea {
+  display: inline-block;
+  /* border-radius: var(--txtarea-border-radius); */
+  font-size: var(--fontsize-lg);
+}
+
+.txtarea-base {
+  width: 300px;
+  border-radius: var(--txtarea-border-radius);
+  height: var(--txtarea-size-base);
+  padding: var(--txtarea-px) var(--txtarea-py-base);
+  font-size: var(--fontsize-lg);
+}
+
+.txtarea-small {
+  width: 300px;
+  border-radius: var(--txtarea-border-radius);
+  height: var(--txtarea-size-small);
+  padding: var(--txtarea-px) var(--txtarea-py-small);
+  font-size: var(--fontsize-md);
+}
+
+/* Light Mode */
+.txtarea-light {
+  background-color: var(--txtarea-light-surface-default);
+  border: 1px solid var(--txtarea-light-border-default);
+  color: var(--txtarea-light-default-text);
+}
+
+.txtarea-light:hover {
+  background-color: var(--txtarea-light-surface-hover);
+  border: 1px solid var(--txtarea-light-border-hover);
+  color: var(--txtarea-light-hover-text);
+}
+
+.txtarea-light:focus {
+  background-color: var(--txtarea-light-surface-focus);
+  border: 1px solid var(--txtarea-light-border-focus);
+  color: var(--txtarea-light-focus-text);
+}
+
+.txtarea-light.filled {
+  background-color: var(--txtarea-light-surface-filled);
+  border: 1px solid var(--txtarea-light-border-filled);
+  color: var(--txtarea-light-filled-text);
+}
+
+.txtarea-light.disabled {
+  background-color: var(--txtarea-light-surface-disabled);
+  border: 1px solid var(--txtarea-light-border-disabled);
+  color: var(--txtarea-light-disabled-text);
+}
+
+.txtarea-light.error {
+  background-color: var(--txtarea-light-surface-error);
+  border: 1px solid var(--txtarea-light-border-error);
+  color: var(--txtarea-light-error-text);
+}
+
+/* Dark Mode */
+.txtarea-dark {
+  background-color: var(--txtarea-dark-surface-default);
+  border: 1px solid var(--txtarea-dark-border-default);
+  color: var(--txtarea-dark-default-text);
+}
+
+.txtarea-dark:hover {
+  background-color: var(--txtarea-dark-surface-hover);
+  border: 1px solid var(--txtarea-dark-border-hover);
+  color: var(--txtarea-dark-hover-text);
+}
+
+.txtarea-dark:focus {
+  background-color: var(--txtarea-dark-surface-focus);
+  border: 1px solid var(--txtarea-dark-border-focus);
+  color: var(--txtarea-dark-focus-text);
+}
+
+.txtarea-dark.filled {
+  background-color: var(--txtarea-dark-surface-filled);
+  border: 1px solid var(--txtarea-dark-border-filled);
+  color: var(--txtarea-dark-filled-text);
+}
+
+.txtarea-dark.disabled {
+  background-color: var(--txtarea-dark-surface-disabled);
+  border: 1px solid var(--txtarea-dark-border-disabled);
+  color: var(--txtarea-dark-disabled-text);
+}
+
+.txtarea-dark.error {
+  background-color: var(--txtarea-dark-surface-error);
+  border: 1px solid var(--txtarea-dark-border-error);
+  color: var(--txtarea-dark-error-text);
+}
+
+/* Media query for automatic dark mode detection */
+@media (prefers-color-scheme: dark) {
+  .txtarea-light {
+    background-color: var(--txtarea-dark-surface-default);
+    border: 1px solid var(--txtarea-dark-border-default);
+    color: var(--txtarea-dark-default-text);
+  }
+
+  .txtarea-light:hover {
+    background-color: var(--txtarea-dark-surface-hover);
+    border: 1px solid var(--txtarea-dark-border-hover);
+    color: var(--txtarea-dark-hover-text);
+  }
+
+  .txtarea-light:focus {
+    background-color: var(--txtarea-dark-surface-focus);
+    border: 1px solid var(--txtarea-dark-border-focus);
+    color: var(--txtarea-dark-focus-text);
+  }
+
+  .txtarea-light.filled {
+    background-color: var(--txtarea-dark-surface-filled);
+    border: 1px solid var(--txtarea-dark-border-filled);
+    color: var(--txtarea-dark-filled-text);
+  }
+
+  .txtarea-light.disabled {
+    background-color: var(--txtarea-dark-surface-disabled);
+    border: 1px solid var(--txtarea-dark-border-disabled);
+    color: var(--txtarea-dark-disabled-text);
+  }
+
+  .txtarea-light.error {
+    background-color: var(--txtarea-dark-surface-error);
+    border: 1px solid var(--txtarea-dark-border-error);
+    color: var(--txtarea-dark-error-text);
+  }
+}

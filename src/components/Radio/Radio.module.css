@@ -1,0 +1,51 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radioInput {
+  margin-right: var(--spacing-xs);
+}
+
+.radioBase {
+  font-size: var(--fontsize-lg);
+}
+
+.radioSmall {
+  font-size: var(--fontsize-md);
+}
+
+/* Light Mode */
+.radio-light {
+  color: var(--radio-light-default-text);
+  background-color: var(--radio-light-surface-default);
+}
+
+.radio-light.error {
+  color: var(--radio-light-error-text);
+}
+
+/* Dark Mode */
+.radio-dark {
+  color: var(--radio-dark-default-text);
+  background-color: var(--radio-dark-surface-default);
+}
+
+.radio-dark.error {
+  color: var(--radio-dark-error-text);
+}
+
+/* Media query for automatic dark mode detection */
+@media (prefers-color-scheme: dark) {
+  .radio-light {
+    color: var(--radio-dark-default-text);
+    background-color: var(--radio-dark-surface-default);
+  }
+
+  .radio-light.error {
+    color: var(--radio-dark-error-text);
+  }
+}

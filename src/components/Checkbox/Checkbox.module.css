@@ -1,0 +1,51 @@
+@import "../../../src/global-styling/design-tokens.css";
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxInput {
+  margin-right: var(--spacing-xs);
+}
+
+.checkbox-base {
+  font-size: var(--fontsize-lg);
+}
+
+.checkbox-small {
+  font-size: var(--fontsize-md);
+}
+
+/* Light Mode */
+.checkbox-light {
+  color: var(--checkbox-light-default-text);
+  background-color: var(--checkbox-light-surface-default);
+}
+
+.checkbox-light.error {
+  color: var(--checkbox-light-error-text);
+}
+
+/* Dark Mode */
+.checkbox-dark {
+  color: var(--checkbox-dark-default-text);
+  background-color: var(--checkbox-dark-surface-default);
+}
+
+.checkbox-dark.error {
+  color: var(--checkbox-dark-error-text);
+}
+
+/* Media query for automatic dark mode detection */
+@media (prefers-color-scheme: dark) {
+  .checkbox-light {
+    color: var(--checkbox-dark-default-text);
+    background-color: var(--checkbox-dark-surface-default);
+  }
+
+  .checkbox-light.error {
+    color: var(--checkbox-dark-error-text);
+  }
+}
