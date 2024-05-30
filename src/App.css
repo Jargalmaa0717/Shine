@@ -19,6 +19,13 @@
 
 }
 
+.body-profile{
+  display: flex;
+  background: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .avatar-profile{
   padding-top: 20px;
 }
@@ -28,26 +35,11 @@
   height: 150px;
   object-fit: cover;
   border-radius: 100%;
-
 }
-/* 
-.profile-info {
-  flex-grow: 1;
-  padding-left: 50px;
-
-} */
 
 .profile-info h1 {
   margin: 0;
   font-size: 20px;
-}
-
-
-.body-frame{
-  background-color: #77B0AA;
-  padding-left: 50px;
-  padding-right: 50px;
-
 }
 
 .profile-info h5 {
@@ -111,5 +103,4 @@
   visibility: visible;
   opacity: 1;
 }
-
 

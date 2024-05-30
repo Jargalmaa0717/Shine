@@ -9,8 +9,6 @@ import Tooltip from "./tooltip";
 import Tabs from "./tabs";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="profile-screen">
       <header className="profile-header">
@@ -23,7 +21,7 @@ function App() {
       </header>
       <body className="body-profile">
         <div className="body-frame">
-          {/* <h1>Миний тухай</h1> */}`
+          <h1>Миний тухай</h1>`
           <div>
           <div className="avatar-profile" >
             <Avatar
@@ -33,9 +31,7 @@ function App() {
               content="image"
               src="girl.jpg"
             />
-            
           </div>
-
           <div className="profile-info">
             <h5>Хувийн мэдээлэл</h5>
             <StatusBadge label="Online" contrast="light" color="success" />
@@ -83,8 +79,7 @@ function App() {
         </Tabs>
         <Tooltip content="Profile Screen Tooltip" />
         </div>
-      </body>`
-      `
+      </body>
     </div>
   );
 }
