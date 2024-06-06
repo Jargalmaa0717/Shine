@@ -1,5 +1,3 @@
-// Switch.tsx
-
 import React, { useState } from "react";
 import styles from "./Switch.module.css";
 
@@ -9,7 +7,6 @@ export interface SwitchProps {
   size?: "base" | "small";
   initialChecked?: boolean;
   initialError?: boolean;
-  onChange?: (checked: boolean) => void;
 }
 
 const Switch = (props: SwitchProps) => {
@@ -19,17 +16,12 @@ const Switch = (props: SwitchProps) => {
     size = "base",
     initialChecked = false,
     initialError = false,
-    onChange,
   } = props;
   const [checked, setChecked] = useState(initialChecked);
   const [error, setError] = useState(initialError);
 
   const handleChange = () => {
-    const newChecked = !checked;
-    setChecked(newChecked);
-    if (onChange) {
-      onChange(newChecked);
-    }
+    setChecked(!checked);
   };
 
   return (

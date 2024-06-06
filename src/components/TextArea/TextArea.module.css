@@ -16,7 +16,7 @@
 
 .txtarea-small {
   width: 300px;
-  border-radius: var(--txtarea-border-radius);
+  border-radius: 1px var(--txtarea-border-radius);
   height: var(--txtarea-size-small);
   padding: var(--txtarea-px) var(--txtarea-py-small);
   font-size: var(--fontsize-md);

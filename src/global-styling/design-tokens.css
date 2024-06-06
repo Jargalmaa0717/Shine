@@ -1,5 +1,4 @@
 :root {
-  /* Don't mind me */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 0;
   font-size: 20px;
@@ -383,6 +382,107 @@
   --grouptabs-dark-border-hover: var(--gray-900);
   --grouptabs-dark-border-selected: var(--gray-600);
   --grouptabs-dark-border-focus: var(--blue-600);
+  /* 
+  --txtfield-light-surface-default: var(--gray-50);
+  --txtfield-light-surface-hover: var(--gray-150);
+  --txtfield-light-surface-focus: var(--gray-100);
+  --txtfield-light-surface-filled: var(--red-50);
+  --txtfield-light-surface-disabled: var(--gray-150);
+  --txtfield-light-surface-error: var(--gray-50);
+
+  --txtfield-light-border-default: var(--gray-400);
+  --txtfield-light-border-hover: var(--gray-400);
+  --txtfield-light-border-focus: var(--blue-300);
+  --txtfield-light-border-filled: var(--gray-400);
+  --txtfield-light-border-disabled: var(--gray-400);
+  --txtfield-light-border-error: var(--red-400);
+
+  --txtfield-light-default-text: var(--gray-500);
+  --txtfield-light-hover-text: var(--gray-500);
+  --txtfield-light-focus-text: var(--gray-500);
+  --txtfield-light-filled-text: var(--gray-500);
+  --txtfield-light-disabled-text: var(--gray-500);
+  --txtfield-light-error-text: var(--gray-500);
+
+  --txtfield-size-small: var(--size-7);
+  --txtfield-size-base: var(--size-8);
+
+  --txtfield-px: var(--size-2);
+  --txtfield-py-small: var(--size-1);
+  --txtfield-py-base: 6px;
+
+  --txtfield-border-radius: var(--radius-md);
+
+  --txtfield-dark-surface-default: var(--gray-900);
+  --txtfield-dark-surface-hover: var(--gray-900);
+  --txtfield-dark-surface-focus: var(--gray-900);
+  --txtfield-dark-surface-filled: var(--gray-900);
+  --txtfield-dark-surface-disabled: var(--gray-900);
+  --txtfield-dark-surface-error: var(--gray-900);
+
+  --txtfield-dark-border-default: var(--gray-600);
+  --txtfield-dark-border-hover: var(--gray-500);
+  --txtfield-dark-border-focus: var(--blue-500);
+  --txtfield-dark-border-filled: var(--gray-600);
+  --txtfield-dark-border-disabled: var(--gray-700);
+  --txtfield-dark-border-error: var(--red-500);
+
+  --txtfield-dark-default-text: var(--white);
+  --txtfield-dark-hover-text: var(--white);
+  --txtfield-dark-focus-text: var(--white);
+  --txtfield-dark-filled-text: var(--white);
+  --txtfield-dark-disabled-text: var(--white);
+  --txtfield-dark-error-text: var(--white); */
+
+  /* --------------------Text Area------------------- */
+
+  --txtarea-light-surface-default: var(--gray-50);
+  --txtarea-light-surface-hover: var(--gray-50);
+  --txtarea-light-surface-focus: var(--gray-50);
+  --txtarea-light-surface-filled: var(--red-50);
+  --txtarea-light-surface-disabled: var(--gray-150);
+  --txtarea-light-surface-error: var(--gray-50);
+
+  --txtarea-light-border-default: var(--gray-400);
+  --txtarea-light-border-hover: var(--gray-400);
+  --txtarea-light-border-focus: var(--blue-300);
+  --txtarea-light-border-filled: var(--gray-400);
+  --txtarea-light-border-disabled: var(--gray-400);
+  --txtarea-light-border-error: var(--red-400);
+
+  --txtarea-light-default-text: var(--gray-500);
+  --txtarea-light-hover-text: var(--gray-500);
+  --txtarea-light-focus-text: var(--gray-500);
+  --txtarea-light-filled-text: var(--gray-500);
+  --txtarea-light-disabled-text: var(--gray-500);
+  --txtarea-light-error-text: var(--gray-500);
+
+  --txtarea-px: var(--size-2);
+  --txtarea-py-small: var(--size-1);
+  --txtarea-py-base: 6px;
+
+  --txtarea-border-radius: var(--radius-md);
+
+  --txtarea-dark-surface-default: var(--gray-900);
+  --txtarea-dark-surface-hover: var(--gray-900);
+  --txtarea-dark-surface-focus: var(--gray-900);
+  --txtarea-dark-surface-filled: var(--gray-900);
+  --txtarea-dark-surface-disabled: var(--gray-900);
+  --txtarea-dark-surface-error: var(--gray-900);
+
+  --txtarea-dark-border-default: var(--gray-600);
+  --txtarea-dark-border-hover: var(--gray-500);
+  --txtarea-dark-border-focus: var(--blue-500);
+  --txtarea-dark-border-filled: var(--gray-600);
+  --txtarea-dark-border-disabled: var(--gray-700);
+  --txtarea-dark-border-error: var(--red-500);
+
+  --txtarea-dark-default-text: var(--white);
+  --txtarea-dark-hover-text: var(--white);
+  --txtarea-dark-focus-text: var(--white);
+  --txtarea-dark-filled-text: var(--white);
+  --txtarea-dark-disabled-text: var(--white);
+  --txtarea-dark-error-text: var(--white);
 
   /* ---------------------------TabsItems------------------------------- */
   --tabsitems-radius-default: var(--radius-base);
@@ -570,14 +670,41 @@
   --iconbutton-py-xlarge: var(--size-12);
 
   /*--------------------- Switch ----------------------*/
-  --switch-light-default-text: #fff;
-  --switch-dark-default-text: #000;
-  --switch-light-surface-default: #4a90e2;
-  --switch-dark-surface-default: #6b7280;
-  --switch-light-border-default: #666;
-  --switch-dark-border-default: #ccc;
-  --switch-light-error-text: #ff0000;
-  --switch-dark-error-text: #ff5050;
-  --switch-border-light: #ccc;
-  --switch-border-dark: #666;
+
+  --switch-light-surface-default: var(--gray-50);
+  --switch-light-border-default: var(--gray-900);
+  --switch-dark-surface-default: var(--gray-900);
+  --switch-dark-border-default: var(--gray-600);
+  --switch-light-default-text: var(--blue-500);
+  --switch-dark-default-text: var(--blue-400);
+
+  --switch-light-surface-hover: var(--gray-150);
+  --switch-light-border-hover: var(--gray-900);
+  --switch-dark-surface-hover: var(--gray-900);
+  --switch-dark-border-hover: var(--gray-500);
+  --switch-light-hover-text: var(--blue-500);
+  --switch-dark-hover-text: var(--blue-400);
+
+  --switch-light-surface-focus: var(--gray-100);
+  --switch-light-border-focus: var(--blue-900);
+  --switch-dark-surface-focus: var(--gray-900);
+  --switch-dark-border-focus: var(--blue-900);
+  --switch-light-focus-text: var(--blue-900);
+  --switch-dark-focus-text: var(--blue-400);
+
+  --switch-light-surface-disabled: var(--gray-150);
+  --switch-light-border-disabled: var(--gray-900);
+  --switch-dark-surface-disabled: var(--gray-900);
+  --switch-dark-border-disabled: var(--gray-700);
+  --switch-light-disabled-text: var(--blue-500);
+  --switch-dark-disabled-text: var(--blue-400);
+
+  --switch-size-small: var(--size-7);
+  --switch-size-base: var(--size-8);
+
+  --switch-px: var(--size-2);
+  --switch-py-small: var(--size-1);
+  --switch-py-base: 6px;
+
+  --switch-border-radius: var(--radius-md);
 }

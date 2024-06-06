@@ -1,42 +1,96 @@
-/* #root {
-  max-width: 1280px;
+.container {
+  max-width: 800px;
   margin: 0 auto;
+  background-color: #ffe4e6; /* Light pink background */
   padding: 2rem;
+  border-radius: 1rem; /* More rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: cornflowerblue; /* Cornflower blue text color */
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form-group {
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #6183c7; /* Light blue text color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.bg-slate-700 {
+  background-color: #ffc0cb; /* Light pink color */
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+/* Additional styles for form elements */
+.text-field {
+  border-color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.text-area,
+.switch {
+  margin-bottom: 1rem;
+}
+
+.radio {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+/* .radioButton {
+  margin-left: 10px;
+  padding-left: 20px;
 } */
+
+.checkbox,
+.button {
+  margin-bottom: 1rem;
+}
+
+.text-field input,
+.text-area textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 0.5rem; /* Rounded corners */
+  background-color: #fff0f5; /* Light pink background */
+  font-family: inherit;
+  color: cornflowerblue;
+}
+
+.text-field input {
+  color: cornflowerblue;
+}
+
+.button {
+  border: 1px solid #090909; /* Black border */
+  border-radius: 2rem; /* Rounded corners */
+  background-color: #ffb6c1; /* Light pink background */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ff69b4; /* Pink background on hover */
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"],
+.switch input[type="checkbox"] {
+  /* accent-color: #6d76a7;  */
+}

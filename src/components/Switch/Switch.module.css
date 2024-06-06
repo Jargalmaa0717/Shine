@@ -1,78 +1,88 @@
 @import "../../../src/global-styling/design-tokens.css";
-/* Switch.module.css */
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .switchInput {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--surface-default);
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-.switchInput:checked + .slider {
-  background-color: var(--surface-default);
-}
-
-.switchInput:focus + .slider {
-  box-shadow: 0 0 1px var(--surface-default);
-}
-
-.switchInput:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.light {
-  --surface-default: var(--switch-light-surface-default);
-  --border-default: var(--switch-light-border-default);
-  --text-default: var(--switch-light-default-text);
-}
-
-.dark {
-  --surface-default: var(--switch-dark-surface-default);
-  --border-default: var(--switch-dark-border-default);
-  --text-default: var(--switch-dark-default-text);
-}
-
-.error {
-  --text-default: var(--switch-light-error-text);
-}
-
-/* Additional styles for different switch sizes */
-.switch-base {
-  width: 60px;
-  height: 34px;
-}
-
-.switch-small {
+  margin-right: var(--spacing-xs);
+  position: relative;
   width: 40px;
-  height: 24px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: var(--switch-light-blue-default);
+  outline: darkblue;
+  border-radius: 20px;
+  transition: background 0.3s;
+  border: 1px solid var(--switch-dark-border-default); /* Add border for light mode */
+}
+
+.switchInput:checked::before {
+  transform: translateX(20px);
+}
+
+.switchInput::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--switch-light-default-text);
+}
+
+/* Small and Base Sizes */
+.switchBase {
+  font-size: var(--fontsize-lg);
+}
+
+.switchSmall {
+  font-size: var(--fontsize-md);
+}
+
+/* Light Mode */
+.switch-light {
+  color: var(--switch-light-default-text);
+  background-color: var(--switch-light-surface-default);
+}
+
+.switch-light .switchInput {
+  border-color: var(--switch-border-light);
+}
+
+.switch-light.error {
+  color: var(--switch-light-error-text);
+}
+
+/* Dark Mode */
+.switch-dark {
+  color: var(--switch-dark-default-text);
+  background-color: var(--switch-dark-surface-default);
+}
+
+.switch-dark .switchInput {
+  border-color: var(--switch-dark-border-default);
+}
+
+.switch-dark.error {
+  color: var(--switch-dark-error-text);
+}
+
+/* Media query for automatic dark mode detection */
+@media (prefers-color-scheme: dark) {
+  .switch-light {
+    color: var(--switch-dark-default-text);
+    background-color: var(--switch-dark-surface-default);
+  }
+
+  .switch-light .switchInput {
+    border-color: var(--switch-border-dark);
+  }
+
+  .switch-light.error {
+    color: var(--switch-dark-error-text);
+  }
 }
